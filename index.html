@@ -1,0 +1,49 @@
+<!--main page for the resume analyser-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AI Powered Resume Analyser</title>
+</head>
+<body>
+    <div id="root">
+        <div id="header"> <div><h1>AI Powered Resume Analyser</h1></div>  
+         <div><p>Check the industry readiness of your resume</p></div>
+    </div>
+  <div id="themeToggleContainer">
+  <label class="theme-switch">
+    <input type="checkbox" id="themeToggle">
+    <span class="slider"></span>
+  </label>
+  <span id="themeLabel">Light Mode</span>
+</div>
+
+
+    
+        <div class="container">
+            <h1>Analyse Resume</h1>
+            <form id="uploadForm" action="analyze.php" method="POST" enctype="multipart/form-data">
+              <input type="file" id="resumeFile" name="resumeFile" accept=".pdf,.doc,.docx" required /> 
+              <button type="submit">Upload Resume</button>
+            </form>
+            <div id="result" title="Analysis Result"></div>
+    </div><div id="info"> * Please note that the analysis provided is for informational purposes only and should not be considered as professional career advice.
+        <br>
+        * Always consult with a qualified career advisor for personalized guidance.
+        <br>
+        * Please ensure only to upload in pdf, doc or docx formats.
+    </div>
+    <footer class="footer">
+        
+        <div id="suggestions">
+            <a href="sample.html">Examplery Templates</a> |
+        </div>
+        <div id="recommendIdeas">
+            <a href="suggestions.html">Recommended Ideas or Ask for more features</a>
+        </footer>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>

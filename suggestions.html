@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suggestions & Feature Requests</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #000;
+      margin: 0;
+      padding: 0;
+    } 
+     h1 {
+      text-align: center;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>💬 We Value Your Suggestions!</h2>
+  </header>
+<!-- THEME TOGGLE (paste after your header) -->
+<div id="themeToggleContainer">
+  <label class="theme-switch">
+    <input type="checkbox" id="themeToggle">
+    <span class="slider"></span>
+  </label>
+  <span id="themeLabel">Dark Mode</span>
+</div>
+<!-- END THEME TOGGLE -->
+
+  <main>
+    <h1>Share Your Thoughts</h1>
+    <p style="text-align:center; color:#555;">
+      Have ideas for improving our Resume Analyzer or want new features?  
+      Let us know below!
+    </p>
+
+    <form id="suggestionForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="type">Suggestion Type</label>
+      <select id="type" name="type" required>
+        <option value="">-- Select Type --</option>
+        <option value="feature">New Feature Request</option>
+        <option value="bug">Report a Bug</option>
+        <option value="improvement">Improvement Suggestion</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Your Suggestion / Feedback</label>
+      <textarea id="message" name="message" placeholder="Write your suggestion here..." required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+
+      <div class="success-message" id="successMessage">
+        ✅ Thank you! Your feedback has been submitted.
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Resume Analyzer | Built with ❤️ by Angad Pal Singh
+  </footer>
+
+  <script src="script.js">
+    
+  </script>
+
+</body>
+</html>
